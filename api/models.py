@@ -82,4 +82,6 @@ class Product(models.Model):
 
 class ProductPiece(models.Model):
 
-    color = models.
+    color = models.CharField(max_length = 8)
+    size = models.CharField(max_length= 20)
+    status = models.FileField()
